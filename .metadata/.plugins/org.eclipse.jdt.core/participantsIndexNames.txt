@@ -1,0 +1,21 @@
+INDEX VERSION 1.131
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\427609147.index
+\MyMinilibStudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\101074086.index
+\minilibstudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3168196939.index
+\MyMinilibStudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3447867924.index
+\MyMinilibStudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2337115700.index
+\Myminilib\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1925917427.index
+\minilibstudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1840357998.index
+\MyMinilibStudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1594538307.index
+\MyMinilibStudent\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\213441401.index
+\dataStructure\src
+F:\Data_structureSys\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\498022870.index
+\dataStructureSyst\src

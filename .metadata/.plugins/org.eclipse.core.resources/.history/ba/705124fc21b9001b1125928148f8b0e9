@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>散列表查找</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/Player.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="HashSearch.css" charset="utf-8">
+   
+    <script type="text/javascript" src="hashSearch.js"></script>
+</head>
+<body>
+<div id="canvas_div">
+    <table id="hash_table" cellspacing="0">
+        <tr align="center" valign="center">
+            <th width="100px" style="border: black solid 1px">散列地址</th>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr align="center" valign="center">
+            <th width="100px" style="border: black solid 1px">关键字</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr align="center" valign="center">
+            <th width="100px" style="border: black solid 1px">比较次数</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <svg id="canvas_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" onload="createRect()"></svg>
+    <div class="express_window" id="express_window_id"></div>
+</div>
+<div id="player_div">
+    <label>播放速度:</label>
+    <select id="playSpeed_id" class="playSpeed_class" onclick="getPlaySpeed()">
+        <option value="2">X2</option>
+        <option value="1.5">X1.5</option>
+        <option value="1" selected>X1</option>
+        <option value="0.5">X0.5</option>
+    </select>
+    <input type="button" value="重置" class="player_input" onclick="reset()">
+    <input type="button" value="生成散列表" class="player_input" style="width: 100px" onclick="createHashTable()">
+    <input type="button" value="暂停" class="player_input" onclick="pause()">
+    <input type="button" value="下一步" class="player_input" onclick="nextStep()">
+    <label>散列函数：H(key)=key % </label>
+    <select id="hash_function" class="playSpeed_class" onclick="getM()">
+        <option value="3">3</option>
+        <option value="11" selected>11</option>
+        <option value="13">13</option>
+    </select>
+    <br/>
+
+    <label>要查找的值：</label>
+    <input type="text" id="search_num" class="player_text">
+    <input type="button" value="查找" class="player_input" onclick="search()">
+    <label>查找结果：</label>
+    <input type="text" id="Search_result" class="player_text" readonly="true">
+
+</div>
+
+</body>
+</html>

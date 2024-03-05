@@ -1,0 +1,62 @@
+package dataStructure.action;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
+
+import dataStructure.dao.ManageAlgorithmDao;
+import dataStructure.vo.Algo;
+import net.sf.json.JSONObject;
+
+public class ManageAlgorithmAction {
+	public Algo algo;
+//	public String searchName;
+	
+	//²éÑ¯Ëã·¨
+    public String queryAlgoByNameAc() throws SQLException, ClassNotFoundException, IllegalAccessException, InstantiationException, IOException {
+        ManageAlgorithmDao mad=new ManageAlgorithmDao();
+        HttpServletRequest request=ServletActionContext.getRequest();
+        HttpServletResponse response=ServletActionContext.getResponse();
+        
+        response.setContentType("application/json;charser=utf-8");
+        PrintWriter pout=response.getWriter();
+        response.setDateHeader("Expires", 0);
+        
+        JSONObject object=JSONObject.fromObject(pout);
+        
+        String searchName=request.getParameter("searchName");
+        
+        System.out.println("ËÑË÷ÄÚÈÝ£º"+searchName);
+        
+        List<Algo> lists=mad.queryAlgoByName(searchName);
+
+        Map<String,Object> resultMap=new HashMap<>();
+        
+        if(lists.size()!=0){
+        	
+            System.out.println(lists);
+
+//            HttpSession session=request.getSession(); 
+//			session.setAttribute("search_result", lists);
+//            return "search_success";
+            resultMap.put("success", true);
+            resultMap.put("data", lists);
+            
+        }else{
+            resultMap.put("success", true);
+
+        	
+//            return "search_fail";
+        }
+
+    }
+}

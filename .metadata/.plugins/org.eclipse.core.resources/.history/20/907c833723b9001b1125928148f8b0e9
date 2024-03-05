@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.hash_table{
+    display: inline-block;
+    height: 100px;
+}
+
+td{
+    height: 30px;
+    width: 40px;
+    border: black solid 1px;
+}
+
+#canvas_svg{
+    position: absolute;
+    top: 120px;
+    width: 800px;
+    height: 350px;
+}
+
+.express_window{
+    top: 120px;
+    width: calc(100% - 800px - 1rem);
+    height: 450px;
+}
+
+#player_div{
+	top:480;
+    height: 120px;
+}
+
+

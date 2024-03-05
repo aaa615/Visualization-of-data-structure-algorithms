@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebContent/main/changePhone.jsp=UTF-8
+encoding//WebContent/main/mine.jsp=UTF-8
+encoding//WebContent/main/register.jsp=UTF-8
+encoding//src/dataStructure/action/ManageUserAction.java=UTF-8
+encoding//src/dataStructure/dao/ManageUserDao.java=UTF-8
+encoding//src/dataStructure/util/DBUtil.java=UTF-8
+encoding//src/dataStructure/vo/User.java=UTF-8

@@ -1,0 +1,73 @@
+#canvas_div{
+    position: relative;
+    display: flex;
+    display:-webkit-flex;
+    justify-content: left;
+}
+
+.hash_table{
+    display: inline-block;
+    height: 100px;
+}
+
+td{
+    height: 30px;
+    width: 40px;
+    border: black solid 1px;
+}
+
+#canvas_svg{
+    position: absolute;
+    top: 120px;
+    width: 800px;
+    height: 350px;
+    border: 1px solid rgba(160,238,225,1);
+    font: bold 14px "Microsoft YaHei UI";
+    text-align: center;
+    text-anchor: middle;
+}
+
+.express_window{
+    position: absolute;
+    left: 800px;
+    top: 120px;
+    width: calc(100% - 800px - 1rem);
+    height: 470px;
+    overflow: auto;
+    background-color: rgba(160,238,225,1);
+    font: 22px "Microsoft YaHei UI";
+    color: #5d6778;
+    line-height: 44px;
+    text-align: center;
+}
+
+#player_div{
+    position: absolute;
+    top: 480px;
+    width: 800px;
+    height: 120px;
+    border: 1px solid rgba(160,238,225,1);
+    text-align: center;
+    font: 14px "Microsoft YaHei UI";
+    line-height: 60px;
+
+}
+
+.player_input{
+    width: 60px;
+    height: 30px;
+    color: black;
+    margin-right: 5px;
+    background-color: #6dfff5;
+}
+
+#player_div label{
+    font: 12px "Microsoft YaHei UI";
+}
+
+.player_text{
+    width: 100px;
+    height: 30px;
+    /*border: 1px green solid;*/
+}
+

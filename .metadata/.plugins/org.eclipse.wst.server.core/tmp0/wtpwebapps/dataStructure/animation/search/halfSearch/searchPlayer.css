@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.player_text{
+    width: 100px;
+    height: 30px;
+    border: 1px green solid;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>冒泡排序</title>
+</head>
+<body>
+<div id="canvas_div">
+    <svg id="canvas_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" onload="load()"></svg>
+    <div class="express_window" id="express_window_id"></div>
+</div>
+<div id="player_div">
+    <label>播放速度:</label>
+    <select id="playSpeed_id" class="playSpeed_class" onclick="getPlaySpeed()">
+        <option value="2">X2</option>
+        <option value="1.5">X1.5</option>
+        <option value="1" selected>X1</option>
+        <option value="0.5">X0.5</option>
+    </select>
+    <input type="button" value="重置" class="player_input" onclick="reset()">
+    <input type="button" value="播放" class="player_input" onclick="autoPlay()">
+    <input type="button" value="暂停" class="player_input" onclick="pause()">
+    <input type="button" value="下一步" class="player_input" onclick="nextStep()">
+</div>
+</body>
+</html>

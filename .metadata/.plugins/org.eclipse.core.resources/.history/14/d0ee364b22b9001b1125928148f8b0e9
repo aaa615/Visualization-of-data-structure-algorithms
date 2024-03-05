@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.hash_table{
+    display: inline-block;
+    height: 100px;
+}
+
+td{
+    height: 30px;
+    width: 40px;
+    border: black solid 1px;
+}

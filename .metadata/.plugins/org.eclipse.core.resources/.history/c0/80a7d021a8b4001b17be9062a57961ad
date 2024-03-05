@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+<package name="dataStructure" extends="struts-default">
+<action name="*ManageUserAction" class="dataStructure.action.ManageUserAction" method="{1}">
+	<result name="login_fail">/main/login.jsp</result>
+	<result name="login_success">/main/index.jsp</result>
+	<result name="cancel_login">/main/login.jsp</result>
+	<result name="add_user">/main/login.jsp</result>
+	<result name="add_fail">/main/register.jsp</result>
+    <result name="cancelchange">/main/welcome.jsp</result>
+	<result name="change_success">/main/mine.jsp</result>
+	<result name="change_fail">/main/changePsd.jsp</result>
+	<result name="change_name_success">/main/mine.jsp</result>	
+	<result name="changePhone_fail">/main/changePhone.jsp</result>
+	<result name="changePhone_success">/main/mine.jsp</result>
+</action>
+
+<action name="queryAlgoAjax" class="dataStructure.action.ManageAlgorithmAction" method="queryAlgoByNameAc">
+	
+</action>
+
+</package>
+</struts>
+
+
